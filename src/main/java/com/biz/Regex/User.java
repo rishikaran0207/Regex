@@ -40,7 +40,7 @@ import java.util.Scanner;
         }
         public static void password() {
             System.out.println("\nEnter the password with following rules:");
-            System.out.println("\n Minimum 8 characters with atleast \n one Upper case \n one special character:");
+            System.out.println("\n Minimum 8 characters with atleast \n one Upper case \n one special character \n one Number:");
             password = scan.nextLine();
             Regex.password(password);
         }
