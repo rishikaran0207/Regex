@@ -9,6 +9,7 @@ import java.util.Scanner;
             User details = new User();
             details.firstname();
             details.lastname();
+            details.mail();
 
         }
 
@@ -22,6 +23,13 @@ import java.util.Scanner;
             System.out.println("\nEnter the last name, \nfirst letter capital and minimum 3 letters:");
             last_name = scan.next();
             Regex.name(last_name);
+        }
+
+        public static void mail() {
+            System.out.println("\nEnter the mail with following valid format:");
+            System.out.println("\nFormat is E.g. abc.xyz@bl.co.in (In that abc, bl & co is mandatory)");
+            mail_ID = scan.next();
+            Regex.mail(mail_ID);
         }
     }
 
