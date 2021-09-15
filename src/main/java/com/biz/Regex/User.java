@@ -11,6 +11,7 @@ import java.util.Scanner;
             details.lastname();
             details.mail();
             details.phonenumber();
+            details.password();
 
         }
 
@@ -36,6 +37,12 @@ import java.util.Scanner;
             System.out.println("\nEnter the phone number with country code  (E.g:91 9876543210):");
             phone_number = scan.nextLine();
             Regex.phonenumber(phone_number);
+        }
+        public static void password() {
+            System.out.println("\nEnter the password with following rules");
+            System.out.println("1. minimum 8 characters");
+            password = scan.nextLine();
+            Regex.password(password);
         }
     }
 
