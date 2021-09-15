@@ -8,6 +8,7 @@ import java.util.Scanner;
         public static void main(String[] args) {
             User details = new User();
             details.firstname();
+            details.lastname();
 
         }
 
@@ -17,6 +18,10 @@ import java.util.Scanner;
             first_name = scan.next();
             Regex.name(first_name);
         }
-
+        public static void lastname() {
+            System.out.println("\nEnter the last name, \nfirst letter capital and minimum 3 letters:");
+            last_name = scan.next();
+            Regex.name(last_name);
+        }
     }
 
