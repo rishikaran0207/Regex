@@ -39,8 +39,8 @@ import java.util.Scanner;
             Regex.phonenumber(phone_number);
         }
         public static void password() {
-            System.out.println("\nEnter the password with following rules");
-            System.out.println("1. minimum 8 characters with atleast one Upper case");
+            System.out.println("\nEnter the password with following rules:");
+            System.out.println("\n Minimum 8 characters with atleast \n one Upper case \n one special character:");
             password = scan.nextLine();
             Regex.password(password);
         }
