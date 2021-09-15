@@ -10,6 +10,7 @@ import java.util.Scanner;
             details.firstname();
             details.lastname();
             details.mail();
+            details.phonenumber();
 
         }
 
@@ -30,6 +31,11 @@ import java.util.Scanner;
             System.out.println("\nFormat is E.g. abc.xyz@bl.co.in (In that abc, bl & co is mandatory)");
             mail_ID = scan.next();
             Regex.mail(mail_ID);
+        }
+        public static void phonenumber() {
+            System.out.println("\nEnter the phone number with country code  (E.g:91 9876543210):");
+            phone_number = scan.nextLine();
+            Regex.phonenumber(phone_number);
         }
     }
 
